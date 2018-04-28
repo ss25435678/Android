@@ -11,12 +11,14 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Call
     private final static String TAG = "Result";
     private int mTagCount = 0;
     public MainFragment.GameResultType mGameResultType;
+    public MainFragment mainFragment;
     public Fragment fragResult;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mainFragment = (MainFragment) getSupportFragmentManager().findFragmentById(R.id.fragMain);
     }
 
     @Override
@@ -31,9 +33,13 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Call
                     ((GameResult2Fragment) fragResult).updateGameResult(iCountSet, iCountPlayerWin,
                             iCountComWin, iCountDraw);
                     break;
+            }
         }
+
     }
 
+    public void InvokeUpdateResult() {
+        mainFragment.UpdateResult();
     }
 
     @Override
@@ -46,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Call
                 GameResultFragment frag = new GameResultFragment();
                 fragTran = getSupportFragmentManager().beginTransaction();
                 mTagCount++;
-                sFragTag = TAG + new Integer(mTagCount).toString();
+                sFragTag = TAG + mTagCount;
                 fragTran.replace(R.id.frameLay, frag, sFragTag);
                 fragTran.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 fragTran.addToBackStack(null);
@@ -56,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Call
                 GameResult2Fragment frag2 = new GameResult2Fragment();
                 fragTran = getSupportFragmentManager().beginTransaction();
                 mTagCount++;
-                sFragTag = TAG + new Integer(mTagCount).toString();
+                sFragTag = TAG + mTagCount;
                 fragTran.replace(R.id.frameLay, frag2, sFragTag);
                 fragTran.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
                 fragTran.addToBackStack(null);
@@ -64,13 +70,15 @@ public class MainActivity extends AppCompatActivity implements MainFragment.Call
                 break;
             case HIDE:
                 FragmentManager fragMgr = getSupportFragmentManager();
-                sFragTag = TAG + new Integer(mTagCount).toString();
+                sFragTag = TAG + mTagCount;
                 Fragment fragGameResult = fragMgr.findFragmentByTag(sFragTag);
-                fragTran = fragMgr.beginTransaction();
-                fragTran.remove(fragGameResult);
-                fragTran.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-                fragTran.addToBackStack(null);
-                fragTran.commit();
+                if (fragGameResult != null) {
+                    fragTran = fragMgr.beginTransaction();
+                    fragTran.remove(fragGameResult);
+                    fragTran.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+                    fragTran.addToBackStack(null);
+                    fragTran.commit();
+                }
                 break;
         }
 

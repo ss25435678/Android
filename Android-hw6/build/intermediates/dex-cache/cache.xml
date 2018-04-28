@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.3.0_ff49cd8d526755636fec24e097b38e2d45477711.jar" />
+    </item>
+    <item
+        jar="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.3.0_14873ef827484920694be2ff197f2c3580e2ac7a.jar" />
+    </item>
+    <item
+        jar="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\jars\libs\internal_impl-23.3.0.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\pre-dexed\debug\internal_impl-23.3.0_535dd219b40886f020d525de9391c89ac3373e6e.jar" />
+    </item>
+    <item
+        jar="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.3.0_f87bd8d3524bfcd4ecbfd8a550cb70a96cff4931.jar" />
+    </item>
+    <item
+        jar="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\jars\classes.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.3.0_912b23d708cce3e22f58ffcdc0b8d38aed5200eb.jar" />
+    </item>
+    <item
+        jar="C:\Users\yu\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.3.0\support-annotations-23.3.0.jar"
+        jumboMode="false"
+        revision="24.0.0"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="C:\Users\yu\Desktop\Android-APP-hw6\HW6\app\build\intermediates\pre-dexed\debug\support-annotations-23.3.0_03073ccafbe4a16dbba1413c427baf975a603ffc.jar" />
+    </item>
+
+</items>

@@ -15,9 +15,9 @@ import android.widget.EditText;
 public class GameResult2Fragment extends Fragment {
 
     private EditText mEdtCountSet,
-                    mEdtCountPlayerWin,
-                    mEdtCountComWin,
-                    mEdtCountDraw;
+            mEdtCountPlayerWin,
+            mEdtCountComWin,
+            mEdtCountDraw;
 
     public GameResult2Fragment() {
         // Required empty public constructor
@@ -44,6 +44,8 @@ public class GameResult2Fragment extends Fragment {
         ((MainActivity) getActivity()).fragResult = this;
 
         getActivity().findViewById(R.id.frameLay).setVisibility(View.VISIBLE);
+
+        ((MainActivity) getActivity()).InvokeUpdateResult(); // Update values immediately
     }
 
     @Override
